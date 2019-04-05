@@ -1,0 +1,36 @@
+<%
+  // Twitterカードなどの情報
+  const metaSetting = {
+    tw_card:'summary_large_image',
+    tw_site:'@hoge',
+    tw_creator:'@hoge',
+    tw_title:'titleが入ります',
+    tw_description:'descriptionが入ります',
+    tw_image:'image_urlが入ります'
+  }
+%>
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+<%- include('./_assets/ejs/_meta') %>
+<%- include('./_assets/ejs/_tw_card',{config:metaSetting}) %>
+<%- include('./_assets/ejs/_ga',{gaAccount:gaAccount}) %>
+<link rel="stylesheet" href="./css/style.css">
+<title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <video class="video" id="video1" src="./movie/neco03_720.mp4"></video>
+
+    <ul>
+      <li><a class="playButton" href="#">Play</a></li>
+      <li><a class="pauseButton" href="#">Pause</a></li>
+    </ul>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
