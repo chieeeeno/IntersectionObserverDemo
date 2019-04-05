@@ -37,5 +37,5 @@ export function optimizeImageTask() {
 
 export function copyImageTask() {
   const outDir = isProduction ? PATHS.dest : PATHS.docRoot;
-  return src(`${PATHS.src}**/*.{jpg,jpeg,gif,png,svg}`).pipe(dest(outDir));
+  return src(`${PATHS.src}**/*.{jpg,jpeg,gif,png,svg,mp4}`).pipe(dest(outDir));
 }

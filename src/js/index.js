@@ -5,14 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const options = {
     root: null,
-    rootMargin: 0,
-    threshold: [0.25, 0.5],
+    rootMargin: '-250px',
+    // threshold: [0.5],
   };
 
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      console.log(entry);
-    });
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        console.log('play!!');
+        entry.target.play();
+      } else {
+        console.log('pause!!');
+        entry.target.pause();
+      }
+    }
   }, options);
   observer.observe(moviePlayer);
 

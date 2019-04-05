@@ -14,20 +14,22 @@
 
 <head>
 <%- include('./_assets/ejs/_meta') %>
-<%- include('./_assets/ejs/_tw_card',{config:metaSetting}) %>
-<%- include('./_assets/ejs/_ga',{gaAccount:gaAccount}) %>
 <link rel="stylesheet" href="./css/style.css">
 <title>Document</title>
 </head>
 
 <body>
   <div class="container">
-    <video class="video" id="video1" src="./movie/neco03_720.mp4"></video>
+    <div class="containerTop">
+      <p class="text">下にスクロールしてね↓↓↓</p>
+    </div>
+    <div class="containerMain">
+      <video class="video" id="video1" src="./movie/neco03_720.mp4" muted></video>
+    </div>
+    <div class="containerBottom">
+      <p class="text">動画を抜けると再生が止まるよ↑↑↑</p>
+    </div>
 
-    <ul>
-      <li><a class="playButton" href="#">Play</a></li>
-      <li><a class="pauseButton" href="#">Pause</a></li>
-    </ul>
   </div>
 
   <script src="./js/app.js"></script>
