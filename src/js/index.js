@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const entry of entries) {
       if (entry.isIntersecting) {
         console.log('play!!');
-        entry.target.play();
+        // entry.target.play();
       } else {
         console.log('pause!!');
         entry.target.pause();
