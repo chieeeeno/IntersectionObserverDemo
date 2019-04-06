@@ -50,5 +50,8 @@
     "typescript": "^3.4.1",
     "webpack": "^4.29.6",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "ua-parser-js": "^0.7.19"
   }
 }
