@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const moviePlayer = document.getElementById('video1');
   const options = {
     root: null,
-    rootMargin: '-250px',
+    rootMargin: '-15%',
     // threshold: [0.5],
   };
 
