@@ -1,4 +1,5 @@
 import UAParser from 'ua-parser-js';
+import 'intersection-observer';
 
 document.addEventListener('DOMContentLoaded', () => {
   const parser = new UAParser();
